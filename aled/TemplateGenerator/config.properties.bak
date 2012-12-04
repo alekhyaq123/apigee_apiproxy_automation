@@ -1,0 +1,9 @@
+#Gateway Configurations
+
+$ProvideName=coket
+$ProvideNameProxy=CokeProxy jhgjgjhg
+$BasePath=/v1/products
+$ProviderURL=http://api.coke.com
+$OrgName=demox
+
+filestoreplace=Gateway/APIs/ProvidersAPI/deploy.sh, Gateway/APIs/ProvidersAPI/apiproxy/$ProvideNameProxy.xml,Gateway/APIs/ProvidersAPI/apiproxy/proxies/default.xml,Gateway/APIs/ProvidersAPI/apiproxy/targets/default.xml
